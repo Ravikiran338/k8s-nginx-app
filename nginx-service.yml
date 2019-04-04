@@ -4,10 +4,11 @@ metadata:
   name: nginx-app-service
 
 spec:
-  type: Nodeport
+  type: NodePort
   ports:
   -  targetPort: 8080
      port: 8080
+     nodeport: 30008
   
 
   selector:
